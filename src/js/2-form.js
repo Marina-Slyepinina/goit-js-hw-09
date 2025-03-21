@@ -23,8 +23,9 @@ function handleInput(evn) {
 
 function handleSubmit(evn) {
     evn.preventDefault();  
-    if (evn.target.elements.email.value === "" || evn.target.elements.message.value === "") {
-        return alert("Fill please all fields");
+    if (!formData.email || !formData.message) {
+        alert("Fill please all fields");
+        return;
     } else {
         console.log(formData);
         localStorage.removeItem(localStorageKey);
