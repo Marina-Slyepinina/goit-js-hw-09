@@ -1,18 +1,87 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
 @import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 0;
+    justify-content: space-between;
+
+    max-width: 1128px;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+.gallery-item {
+    height: 200px;
+    overflow: hidden;
+}
+
+.sl-wrapper {
+    background: rgba(46, 47, 66, 0.8);
+}
+
+.sl-prev, .sl-next, .sl-close, .sl-counter {
+    color: #fff !important;
+}
+
+.feedback-form {
+    width: 408px;
+    margin: 0 auto;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    
+}
+
+input {
+    height: 40px;
+}
+
+textarea {
+    height: 80px;
+}
+
+input, textarea {
+    margin: 8px 0;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    padding: 2px 10px;
+}
+
+form button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 95px;
+    height: 40px;
+    background: #4e75ff;
+    border: none;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+form button:hover {
+    background: #6c8cff;
+}
+
+input:hover,
+textarea:hover {
+    border: 1px solid #000;
+}
