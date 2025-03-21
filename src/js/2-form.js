@@ -17,7 +17,7 @@ form.addEventListener("input", handleInput);
 form.addEventListener("submit", handleSubmit);
 
 function handleInput(evn) {
-    formData[evn.target.name] = evn.target.value;
+    formData[evn.target.name] = evn.target.value.trim();
     localStorage.setItem(localStorageKey, JSON.stringify(formData));
 }
 
